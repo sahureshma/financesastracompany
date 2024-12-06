@@ -1,0 +1,137 @@
+.portfolio-dashboard-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-family: 'calibri';
+    color: #333;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .portfoliomanager-h3 {
+    font-size: 1.5em;
+    
+    color: #333;
+  }
+  
+  .portfolio-accounts-section {
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-accounts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-accounts-table th {
+    background-color: #24b676;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .portfolio-accounts-table td {
+    border: 1px solid #eaeaea;
+    padding: 10px;
+    text-align:center;
+  }
+  
+  .portfolio-accounts-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .portfolio-add-link {
+    text-align: center;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .portfolio-action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-action-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .portfolio-alert-button {
+    background-color: #ffc107;
+  }
+  
+  .portfolio-allocation-section {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .portfolio-allocation-chart {
+    flex: 1;
+    text-align: center;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .portfolio-pie-chart {
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background: conic-gradient(
+      #28a745 0% 100%,
+      #eaeaea 0% 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-weight: bold;
+  }
+  .portfolio-accounts-table th span{
+  
+    display: block;
+    font-size: 12px;
+    color: white;
+    
+  }
+  .portfolio-accounts-table td span {
+    display: block;
+    font-size: 12px;
+    color: #24b676;
+  }
+  .portfolio-add {
+    color: #24b676;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .centered-content {
+    display: flex; /* Enables flexible alignment */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    text-align: center; /* Ensures inner text alignment */
+  }
+  .green-plus {
+    color: green;
+    font-weight: bold;
+  }
+  /* CSS for negative values */
+  .negative-value {
+    color: red;
+  }
+  .portfolio-allocation-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,0 +1,224 @@
+.finance-portfolio-dashboard {
+  font-family: 'calibri';
+  
+  padding: 20px;
+ 
+}
+
+.finance-dashboard-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  justify-content: flex-start; /* Align items to the top */
+ 
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 20px;
+  font-family: 'calibri';
+
+ 
+}
+.finance-dashboardh1{
+  margin-left: 90px;
+ 
+}
+
+
+
+.finance-tabs {
+  display: flex;
+  gap: 10px; /* Add spacing between buttons */
+ 
+}
+
+.finance-tab {
+  padding: 10px 20px;
+  border: 1px solid #a79a9a;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+  
+}
+
+.finance-tab.active {
+  background-color: #24b676;
+  color: white;
+}
+
+.finance-tab:hover {
+  background-color: #24b676;
+  color: white;
+}
+
+/* Enhance Message */
+.finance-enhance-message {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #24b676;
+ 
+}
+
+/* Dashboard Content */
+.finance-dashboard-content {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Investment Overview */
+.finance-investments-overview {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 20px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%; /* Adjust width */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* For footer alignment */
+}
+
+
+.finance-investment-details-card {
+  background-color: #f9f9f9; /* Light background for the card */
+  border: 3px solid #a79a9a; /* Border for the card */
+  border-radius: 8px;
+ 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+  display: flex; /* Flex layout */
+  justify-content: space-between; /* Distribute groups evenly */
+  align-items: flex-start; /* Align items at the top */
+  width: 40%; /* Decrease card width */
+  max-width: 900px; /* Optional max width for larger screens */
+  margin-right: 700px;
+  
+}
+
+
+.finance-investment-details-group {
+  flex-grow: 1; /* Allow groups to grow evenly */
+  margin: 0 8px; /* Add spacing between groups */
+  text-align: center; /* Center text inside each group */
+  margin-bottom: 16px;
+}
+.finance-investment-details-group:last-child {
+  margin-right: 0; /* Remove right margin for the last group */
+  
+}
+
+
+.finance-investment-detailsother {
+
+  flex-grow: 1; /* Allow this section to grow evenly */
+  margin: 16px 0; /* Add spacing above and below */
+  text-align: center; /* Center text inside */
+}
+
+.finance-investment-footer {
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  margin-top: 206px;
+}
+
+.finance-negative-gain {
+  color: red;
+}
+
+.finance-negative-gainother {
+  color: red;
+}
+.finance-investment-detail h3 {
+  margin: 10px 0;
+}
+
+
+
+
+
+.finance-stocks-dashboard {
+  padding: 20px;
+  background-color: white; /* Background for the component */
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-family: 'calibri';
+    }
+    
+    
+    
+    .finance-tab.active {
+      background-color: white;
+      color: black;
+      margin-left: 70px;
+    }
+    .finance-tab:hover {
+      background-color: #24b676;  /* Set background color to green on hover */
+      color: white;             /* Set text color to white on hover */
+      cursor: pointer;         /* Change cursor to pointer on hover */
+    }
+    
+    
+    /* Summary Section */
+    .finance-summary {
+      position: absolute; /* Enable positioning relative to the nearest positioned parent */
+      top: 10px; /* Adjust this to control vertical positioning */
+      right: 90px; /* Align to the right */
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+      width: 40%; /* Adjust the width as needed */
+      z-index: 10; /* Ensure it stays on top of other elements */
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* Align items vertically */
+      margin-top: 340px;
+      border: 3px solid #a79a9a;
+    }
+    
+    .finance-summary div {
+      text-align: center;
+      flex: 1; /* Ensure all divs take equal space */
+      padding: 0 10px; /* Add spacing around the content */
+      position: relative; /* For the border positioning */
+    
+    }
+    
+    .finance-summary div:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 100%;
+      background-color: #666; /* Adjust border color */
+    }
+    
+    
+    .finance-summary h2 {
+      margin: 10px 0 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .finance-positive {
+      color: #24b676;
+    }
+    
+    .finance-negative {
+      color: red;
+    }
+    .financep{
+      color: black;
+      text-align: center;
+      font-weight: bold;
+      
+    }     
+    .investh2{
+      margin-left: 150px;
+      padding: 20px;
+    }

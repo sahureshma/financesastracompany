@@ -1,0 +1,49 @@
+/* PortfolioManager.css */
+
+/* General styles */
+.portfolio-manager {
+    padding: 20px;
+    position: relative;
+  }
+  
+  .transactions-table {
+    margin-top: 20px;
+  }
+  
+  /* Blur background when modal is open */
+  .blur-background {
+    filter: blur(4px);
+    pointer-events: none;
+  }
+  
+  /* Center the delete button */
+  .center-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Modal styles */
+  .deletepop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .deletepop h6 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  
+  .deletepop button {
+    margin-top: 16px;
+  }
+  

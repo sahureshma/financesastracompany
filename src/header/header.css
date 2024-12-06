@@ -314,7 +314,8 @@
     /* Adjust footer nav layout */
     .footer-nav {
       font-size: 12px; /* Smaller font size for footer items */
-      margin-right: 300px;
+   margin-right: 2300px;
+    margin-bottom: 2500px;
     }
   }
   

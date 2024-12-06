@@ -1,0 +1,207 @@
+/* Main Container */
+.networth-stocks-dashboard {
+    padding: 20px;
+    background-color: white; /* Background for the component */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-family: 'calibri';
+      }
+      
+  
+  /* Navigation Tabs */
+  .networth-tabs {
+    display: flex;
+ margin-left: 80px;
+    margin-top: 20px;
+    flex-wrap: wrap;  /* Allow wrapping on smaller screens */
+  }
+  
+  .networth-tab {
+    padding: 10px 10px;
+    
+    background-color: #f0f0f0;
+ 
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid grey;
+  }
+  
+  .networth-tab.active {
+    background-color: white;
+    color: black;
+   
+  }
+  .networth-tab:hover {
+    background-color: #24b676;  /* Set background color to green on hover */
+    color: white;             /* Set text color to white on hover */
+    cursor: pointer;         /* Change cursor to pointer on hover */
+  }
+  
+  
+  /* Summary Section */
+  .networth-summary {
+    position: absolute; /* Enable positioning relative to the nearest positioned parent */
+    top: 10px; /* Adjust this to control vertical positioning */
+    right: 90px; /* Align to the right */
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 40%; /* Adjust the width as needed */
+    z-index: 10; /* Ensure it stays on top of other elements */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    margin-top: 80px;
+    border: 3px solid #a79a9a;
+  }
+  
+  .networth-summary div {
+    text-align: center;
+    flex: 1; /* Ensure all divs take equal space */
+    padding: 0 10px; /* Add spacing around the content */
+    position: relative; /* For the border positioning */
+  }
+  
+  .networth-summary div:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #666; /* Adjust border color */
+  }
+  
+  
+  .networth-summary h2 {
+    margin: 10px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .networth-positive {
+    color: #24b676;
+  }
+  
+  .networth-negative {
+    color: red;
+  }
+  
+  /* Performance Section */
+  .networth-performance {
+    display: flex;
+    gap: 20px;
+    margin-left: 130px;
+  }
+  
+  .networth-performance-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 35%; /* Decrease the width to make it narrower */
+    margin-top: 120px; /* Keep the top margin as required */
+    border: 3px solid #a79a9a;
+    
+    
+  }
+  
+  
+  
+  .networth-performance-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .networth-performance-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .networth-performance-gain,
+  .networth-performance-loss {
+    text-align: center;
+    width: 45%;
+  }
+  
+  .networth-performance-gain h4,
+  .networth-performance-loss h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  /* Utility */
+  .networth-performance-gain {
+    background-color: #d1f7d6;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .networth-performance-loss {
+    background-color: #fdd9d9;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .networthp{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    
+  }
+  .networth-performanceh3 {
+    color: black; /* Set the text color to black */
+    position: relative; /* Enable positioning to create custom underline */
+    
+  }
+  
+  .networth-performanceh3::after {
+    content: ''; /* Creates an empty content box for the underline */
+    position: absolute;
+    bottom: -5px; /* Adjust this to move the underline closer or further from the text */
+    left: 0;
+    width: 70%; /* Increase this to extend the underline length */
+    height: 2px; /* Set the thickness of the underline */
+    background-color: rgb(182, 174, 174); /* Set the underline color to grey */
+  }
+  /* Style for the p elements with the border */
+.networthpara{
+    display: flex;
+  justify-content: left;
+  align-items: left;
+ 
+  font-size: 16px; /* Adjust the font size as needed */
+  color: black; /* Change the color if necessary */
+  font-weight: bold;
+}
+@media (max-width: 480px) {
+  .networth-tabs {
+    display: flex; /* Stack tabs vertically */
+   
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding-right: 70px;
+  }
+
+  .networth-tab {
+    margin-bottom: 10px;
+    width: 100%; /* Ensure full width on small screens */
+    border: 1px solid grey;
+  }
+
+  .networth-tab:last-child {
+    margin-bottom: 0; /* Remove margin from the last tab */
+  }
+}
+/* Tablet View (481px to 768px) */
+@media (max-width: 768px) {
+  .networth-tabs {
+   margin-left: 20px;
+  }
+
+}
+
